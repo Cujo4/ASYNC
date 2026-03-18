@@ -1,16 +1,127 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <script src="./assets/js/index3.js"></script>
     <script src="./assets/js/regExp.js"></script>
-</head>
-<body>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <!-- <label for="first-name">Name</label>
+    <input id="first-name" name="first-name" type="text"> -->
 
+      <!-- ИЛИ -->
 
+      <fieldset>
+        <!-- <legend>String inputs</legend>
+      <label>
+        Name
+        <input
+          type="text"
+          name="first-name1"
+          placeholder="FIRST NAME"
+          pattern="[A-Z][a-z]{1,19}"
+          value=""
+          required
+          autofocus
+        />
+      </label>
+      <br>
+
+    <label>
+        Email
+        <input type="email" 
+        name="email"
+        placeholder="Your Email"
+        />
+    </label>
+    <br>
+
+    <label>
+        Pass
+        <input type="password" 
+        name="password"
+        placeholder="Your Password"
+        />
+    </label>
+    <br>
+
+    <label>
+        URL
+        <input type="url" 
+        name="url"
+        placeholder="Your URL"
+        />
+    </label>
+    <br>
+
+    <label>
+        TEL
+        <input type="tel" 
+        name="tel"
+        placeholder="+380962726025"
+        value="+380"
+        />
+    </label> -->
+    </fieldset>
+
+    <fieldset>
+      <legend>Number inputs</legend>
+      <label> Quantity <input type="number" name="quantity" min="2" max="8" step="3"></label>
+      <label> Volume <input type="range" name="volume" min="2" max="8" step="3"></label>
+    </fieldset>
+
+    <fieldset>
+      <legend> Data inputs </legend>
+      <label> <span> Date: </span> <input type="date" name="date"></label>
+      <br>
+
+      <label> <span> Datetime: </span> <input type="datetime-local" name="datetime"></label>
+      <br>
+
+      <label> <span> Time: </span> <input type="time" name="time"></label>
+      <br>
+
+      <label> <span> Month: </span> <input type="month" name="month"></label>
+      <br>
+
+      <label> <span> Week: </span> <input type="week" name="week"></label>
+    </fieldset>
+
+<!-- multiple - Можно выбрать несколько файлов. -->
+
+    <label> File(s) <input type="file" name="user-photo" multiple></label>
+    <br>
+
+    <label> Color <input type="color" name="color"></label>
+    <br>
+
+    <input type="button" value="Button">
+    <br>
+
+    <!-- <label> Gender <input type="checkbox" value="Male"></label> -->
+    Gender:
+      <br>
+      <label> Male <input type="radio" name="gender" value="Male"></label>
+      <br>
+      <label> Female <input type="radio" name="gender" value="Female"></label>
+      <br>
+      <label> Other <input type="radio" name="gender" value="Oth" checked></label>
+      <br>
+
+      <fieldset>
+        <legend> Prefs: </legend>
+        <label> <input type="checkbox" name="prefs" value="pets"> Pets </label>
+        <label> <input type="checkbox" name="prefs" value="cars"> Cars </label>
+        <label> <input type="checkbox" name="prefs" value="tech"> Tech </label>
+      </fieldset>
     
-</body>
+
+      <button type="submit">Send</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
 </html>
