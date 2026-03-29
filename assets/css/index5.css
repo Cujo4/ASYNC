@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color:beige;
+    position: relative;
+}
+
+.bg {
+    position: absolute;
+    width: 100vh;
+    height: 100vw;
+    object-fit: cover;
+    transform: rotate(-90deg); /* поворот */
+    z-index: -1;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 50%;
+    margin: 2.5%;
+}
+
+.f1 {
+    text-align: left;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    flex: 1;
+    margin: 10px;
+    font-size: 20px;
+    padding: 40px 30px;
+    border: none;
+    box-shadow: 0 0 10px white;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 10px 15px;
+    align-items: center;
+
+}
+
+ input, select, textarea, button { 
+    font-size: 18px;
+}
+
+label {
+     display: contents; /* Скрывает контейнер, но оставляет дочерние элементы. */
+}
+
+.names {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.number {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+input:valid:not(:placeholder-shown) {
+    background-color: aquamarine;
+}
+
+input:invalid:not(:placeholder-shown) {
+    background-color: red;
+}
+
+button {
+    width: 30vw;
+    height: 3vw;
+    margin: 0 auto;
+}
+
+
+
+
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./assets/css/index5.css">
+
+    <script defer src="./assets/js/index5.js"></script>
+</head>
+<body>
+
+    <img src="https://i.pinimg.com/1200x/cd/28/2d/cd282dc43e7fea7d5a330d46252d0ab5.jpg" alt="photo" class="bg">
+    <form action="">
+        <fieldset class="f1">
+            <div class="header">
+                <h2>Contact form</h2>
+                <p>Please fill in your information and we'll be sending your order.</p>
+            </div>
+           
+            <div class="form-row">
+                <label> <span>Your name</span>
+                    <span class="names">
+                        <input type="text" name="name" placeholder="First name" pattern="[A-Z]{1}[a-z]{1,19}" maxlength="20" required>
+                        <input type="text" name="name" placeholder="Last name" pattern="[A-Z]{1}[a-z]{1,19}" maxlength="20" required>
+                    </span>
+                </label> 
+                    
+                    
+            </div>
+            
+            <div class="form-row">
+                <label>  <span>Your email</span>
+                    <input type="email" name="email" placeholder="your_mail@mail.com" pattern=".{1,46}@[a-z]{1,10}\.[a-z]{1,10}" maxlength="50" required>
+                </label>  
+            </div>
+            
+            <div class="form-row">
+                <label> <span>Phone *</span>
+                    <span class="number">
+                        <input type="tel" name="phone" placeholder="000" pattern="\d{3}" maxlength="3" required>
+                        <input type="tel" name="phone" placeholder="000" pattern="\d{3}" maxlength="3" required>
+                        <input type="tel" name="phone" placeholder="0000" pattern="\d{4}" maxlength="4" required>  
+                    </span>
+                </label>
+            </div>
+            
+            <div class="form-row">
+                <label> <span>Message subject *</span>
+                    <select name="select-message">
+                        <option value="other">Other</option>
+                        <option value="price">question about prices</option>
+                        <option value="consult">product / service consultation</option>
+                        <option value="clarific">clarification of product availability</option>
+                        <option value="place">question about a placed order</option>
+                    </select>
+                </label>
+            </div>
+            
+            <div class="form-row">
+                <label> 
+                    <span>Message *</span>
+                    <textarea name="message" rows="5" maxlength="500"></textarea>
+                </label>
+            </div>
+
+            <hr>
+            
+        
+            <button type="submit" name="btn">Submit form</button> 
+        </fieldset>
+        
+    </form>
+    
+</body>
+</html>
